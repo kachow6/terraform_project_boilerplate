@@ -37,6 +37,6 @@ resource "aws_s3_bucket_public_access_block" "test_bucket_policy" {
 }
 
 resource "aws_s3_bucket_acl" "test_bucket_acl" {
-  bucket = aws_s3_bucket.cms_bucket.id
+  bucket = aws_s3_bucket.test_bucket.id
   acl    = "private"
 }
