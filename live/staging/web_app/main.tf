@@ -6,10 +6,10 @@ provider "aws" {
 
 terraform {
   backend "s3" {
-    bucket         = "org-dev-terraform-state"
+    bucket         = "<org>-dev-terraform-state"
     key            = "example/kevin_terraform_sample/live/staging/web_app/terraform.tfstate"
     region         = "us-east-1"
-    dynamodb_table = "org-dev-terraform-state-db"
+    dynamodb_table = "<org>-dev-terraform-state-db"
     encrypt        = true
   }
 }
